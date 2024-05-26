@@ -1,6 +1,7 @@
-from multiprocessing import JoinableQueue, Process, Lock, synchronize, Event
-import time
 import random
+import time
+from multiprocessing import Event, JoinableQueue, Lock, Process, synchronize
+
 
 class Client:
     def __init__(self, name: str) -> None:

@@ -1,6 +1,7 @@
-from multiprocessing import Process, JoinableQueue, RLock, synchronize
-import time
 import random
+import time
+from multiprocessing import JoinableQueue, Process, RLock, synchronize
+
 
 class Instrument:
     def __init__(self, name: str, usage_time: int) -> None:

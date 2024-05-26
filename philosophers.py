@@ -1,5 +1,6 @@
-from multiprocessing import Process, RLock, synchronize, BoundedSemaphore
 import time
+from multiprocessing import BoundedSemaphore, Process, RLock, synchronize
+
 
 class SimplePhilosopher(Process):
     _DINING_TIME = 1
